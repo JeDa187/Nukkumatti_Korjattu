@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading.unity
     guid: d4fb4175a4ebd6644a82ffc6f6486717
   - enabled: 1
+    path: Assets/Koodaus-Jesse/Scenes/MainMenuTest.unity
+    guid: 6f40a73b233dd44468dbb2be6b3387bf
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 167a13399434155429d9a7bedb410b2c
   - enabled: 1
