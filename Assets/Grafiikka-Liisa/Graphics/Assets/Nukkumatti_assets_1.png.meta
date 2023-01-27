@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c74be39553061a4080cad160d199630
+guid: 610ff445dbbd4a240952f84fa8e49c68
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Platform_Vertical1
+      name: Nukkumatti_assets_1_0
       rect:
         serializedVersion: 2
         x: 32
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d8a9f02e57f5e4d961618ffe170f9e
-      internalID: -230070693
+      spriteID: b9add01d6aad62a448e9def345e7398c
+      internalID: -1086917639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_Square
+      name: Platfrom_Square
       rect:
         serializedVersion: 2
         x: 721
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45c60e7f9a3de394b850ec50a80687ca
-      internalID: 1797323920
+      spriteID: aaf8518ad6cf89c498f63a197a72306e
+      internalID: 1655636389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_Corner
+      name: Nukkumatti_assets_1_2
       rect:
         serializedVersion: 2
         x: 1707
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ea260ab40c07d843816898489ea5903
-      internalID: -1477345048
+      spriteID: 3441684b16834c84888454fd0e6d45db
+      internalID: 1554134126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_Vertical2
+      name: Nukkumatti_assets_1_3
       rect:
         serializedVersion: 2
         x: 727
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8280ea047fa1f06468e3929fcee8bfd9
-      internalID: 40345117
+      spriteID: 44ca7eb4bf8f69049929fc73b4adb3a2
+      internalID: -1774885415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pillow
+      name: Nukkumatti_assets_1_4
       rect:
         serializedVersion: 2
         x: 1679
@@ -203,17 +203,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d6eb29552224e4cbf6aa8b6fb5f0a8
-      internalID: -1371947630
+      spriteID: f88f08880947b5d4f924cd53b2ff7d40
+      internalID: -1980416477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_vertical3
+      name: Nukkumatti_assets_1_5
       rect:
         serializedVersion: 2
-        x: 2455
+        x: 2446
         y: 1054
         width: 506
         height: 680
@@ -224,35 +224,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ffc0f0ec537cf24eb38b77575f58946
-      internalID: 45170297
+      spriteID: 5626c98f376d44b4fbdfe3be5dfc613d
+      internalID: -971311292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheep
+      name: Sheep_item
       rect:
         serializedVersion: 2
         x: 1831
         y: 470
         width: 532
         height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18241504}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf9414c29428b3e41b6db30a6eadef9e
-      internalID: -276420507
+      spriteID: baa5aa575585f704db35d3fd05768545
+      internalID: -701624429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_Small
+      name: Nukkumatti_assets_1_7
       rect:
         serializedVersion: 2
         x: 2457
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68db1f761bba8124fb060e3d557e4007
-      internalID: -1662409847
+      spriteID: 9a93aef51ff3b1a4ea04db01221d5c12
+      internalID: -441668656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_Horisontal2
+      name: Platform_Wide
       rect:
         serializedVersion: 2
         x: 33
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c7dad5d73291a48b57d180df9ec8a5
-      internalID: 647837028
+      spriteID: 640b4ea144b977843bc3e263698cdd26
+      internalID: 704378155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Platform_Horisontal1
+      name: Nukkumatti_assets_1_9
       rect:
         serializedVersion: 2
         x: 2037
@@ -308,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae8cf625b5a65346baf9b46eba99d8a
-      internalID: 1844670113
+      spriteID: ac24753e847f1184e843da1897712b1c
+      internalID: -1783321883
       vertices: []
       indices: 
       edges: []
@@ -325,16 +325,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Platform_Small: -1662409847
-      Platform_vertical3: 45170297
-      Platform_Vertical1: -230070693
-      Platform_Vertical2: 40345117
-      Platform_Horisontal1: 1844670113
-      Platform_Corner: -1477345048
-      Sheep: -276420507
-      Platform_Square: 1797323920
-      Platform_Horisontal2: 647837028
-      Pillow: -1371947630
+      Platform_Wide: 704378155
+      Nukkumatti_assets_1_3: -1774885415
+      Nukkumatti_assets_1_0: -1086917639
+      Sheep_item: -701624429
+      Nukkumatti_assets_1_2: 1554134126
+      Nukkumatti_assets_1_7: -441668656
+      Nukkumatti_assets_1_9: -1783321883
+      Nukkumatti_assets_1_4: -1980416477
+      Platfrom_Square: 1655636389
+      Nukkumatti_assets_1_5: -971311292
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
