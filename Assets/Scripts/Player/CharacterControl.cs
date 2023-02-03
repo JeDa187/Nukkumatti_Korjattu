@@ -18,7 +18,12 @@ public class CharacterControl : MonoBehaviour
     public LayerMask groundCheckLayer;
     public bool grounded;
 
- 
+    public float sheepAmmount;
+
+    public GameObject pillow;
+    public Vector3 pillowPosition;
+
+
     public Image filler;
     public float counter;
     public float maxCounter;
@@ -123,7 +128,7 @@ public class CharacterControl : MonoBehaviour
 
         filler.fillAmount = Mathf.Lerp(GameManager.manager.previousHealth / GameManager.manager.maxHealth, GameManager.manager.health / GameManager.manager.maxHealth, counter / maxCounter);
 
-
+        //Pelaaja kuolee kun putoaa tarpeeksi alas
         if(gameObject.transform.position.y < -50)
         {
             Die();
@@ -161,10 +166,22 @@ public class CharacterControl : MonoBehaviour
             AddMaxHealth(40);
         }
 
-        if (collision.CompareTag("LevelEnd"))
+        if (collision.CompareTag("Pillow"))
         {
             GameManager.manager.previousLevel = GameManager.manager.currentLevel;
             SceneManager.LoadScene("Map");
+        }
+
+        //Lampaita kerätään
+        if (collision.CompareTag("Sheep"))
+        {
+            Destroy(collision.gameObject);
+            sheepAmmount++;
+
+            if (sheepAmmount == 5)
+            {
+                Instantiate(pillow, pillowPosition, transform.rotation);
+            }
         }
     }
 
@@ -198,6 +215,7 @@ public class CharacterControl : MonoBehaviour
         }
 
     }
+   
 
     public void Die()
     {

@@ -128,6 +128,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   grounded: 0
+  sheepAmmount: 0
+  pillow: {fileID: 8176922646466559982, guid: b410ecd8221a2764889dec93e23a0dc2, type: 3}
+  pillowPosition: {x: -19.84449, y: -8.577729, z: 0}
   filler: {fileID: 0}
   counter: 0.5
   maxCounter: 3
