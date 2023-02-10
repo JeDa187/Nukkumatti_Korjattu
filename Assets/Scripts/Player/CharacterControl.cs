@@ -108,6 +108,7 @@ public class CharacterControl : MonoBehaviour
         // Hyppy
         if (Input.GetButtonDown("Jump") && grounded && jumpCount < extraJumps)
         {
+            animator.SetTrigger("Jump 0");
             rb2D.velocity = new Vector2(0, jumpForce);
             jumpCount++;
             
