@@ -18,8 +18,19 @@ public class CharacterControl : MonoBehaviour
     public LayerMask groundCheckLayer;
     public bool grounded;
 
+    //Lampaiden keräys
     public float sheepAmmount;
+    
 
+    public Image image1;
+    public Image image2;
+    public Image image3;
+    public Image image4;
+    public Image image5;
+
+
+
+    //Tason läpäisy tyyny
     public GameObject pillow;
     public Vector3 pillowPosition;
 
@@ -49,7 +60,14 @@ public class CharacterControl : MonoBehaviour
         GameManager.manager.historyHealth = GameManager.manager.health;
         GameManager.manager.historyPreviousHealth = GameManager.manager.previousHealth;
         GameManager.manager.historyMaxHealth = GameManager.manager.maxHealth;
-        
+
+      
+            image1.enabled = false;
+            image2.enabled = false;
+            image3.enabled = false;
+            image4.enabled = false;
+            image5.enabled = false;
+       
 
     }
 
@@ -135,6 +153,8 @@ public class CharacterControl : MonoBehaviour
             Die();
         }
 
+       
+
     }
    
 
@@ -179,12 +199,58 @@ public class CharacterControl : MonoBehaviour
             Destroy(collision.gameObject);
             sheepAmmount++;
 
+
+            if (sheepAmmount == 1) 
+            {
+                image1.enabled = true;
+                image2.enabled = false;
+                image3.enabled = false;
+                image4.enabled = false;
+                image5.enabled = false; 
+            }
+            if (sheepAmmount == 2)
+            {
+                image1.enabled = true;
+                image2.enabled = true;
+                image3.enabled = false;
+                image4.enabled = false;
+                image5.enabled = false;
+            }
+            if (sheepAmmount == 3)
+            {
+                image1.enabled = true;
+                image2.enabled = true;
+                image3.enabled = true;
+                image4.enabled = false;
+                image5.enabled = false;
+            }
+            if (sheepAmmount == 4)
+            {
+                image1.enabled = true;
+                image2.enabled = true;
+                image3.enabled = true;
+                image4.enabled = true;
+                image5.enabled = false;
+            }
+
             if (sheepAmmount == 5)
+            {
+                image1.enabled = true;
+                image2.enabled = true;
+                image3.enabled = true;
+                image4.enabled = true;
+                image5.enabled = true;
+            }
+
+            if (sheepAmmount > 4)
             {
                 Instantiate(pillow, pillowPosition, transform.rotation);
             }
         }
+
     }
+
+   
 
 
     void AddMaxHealth(float addMaxHealthAmount)
@@ -216,6 +282,8 @@ public class CharacterControl : MonoBehaviour
         }
 
     }
+
+   
    
 
     public void Die()

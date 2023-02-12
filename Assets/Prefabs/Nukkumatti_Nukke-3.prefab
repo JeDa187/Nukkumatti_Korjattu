@@ -454,6 +454,16 @@ MonoBehaviour:
     m_Bits: 64
   grounded: 0
   sheepAmmount: 0
+  sheepFiller1: {fileID: 4123224519767418402, guid: 0987e4ad55cc70146b7cb27dff63320c, type: 3}
+  sheepFiller2: {fileID: 838441576036302069, guid: 95cc54ab2320f2a4ca4303bc23bb00ae, type: 3}
+  sheepFiller3: {fileID: 5968479710401543181, guid: 3e06053c08a127c4a8ba619cf821c281, type: 3}
+  sheepFiller4: {fileID: 2536454814570577898, guid: 4eaff7a831668584b921384d79bc31d1, type: 3}
+  sheepFiller5: {fileID: 1637382130769638660, guid: 8bca7b0d846c53c46ac5ada00b3d4857, type: 3}
+  sheep1Position: {x: -270.5, y: 965, z: 0}
+  sheep2Position: {x: -87, y: 965, z: 0}
+  sheep3Position: {x: 84.5, y: 965, z: 0}
+  sheep4Position: {x: 262.5, y: 965, z: 0}
+  sheepP5osition: {x: 434, y: 965, z: 0}
   pillow: {fileID: 8176922646466559982, guid: 275db0b078a892a4bb5cf9e1770f08e3, type: 3}
   pillowPosition: {x: -19.84449, y: -8.577729, z: 0}
   filler: {fileID: 0}
