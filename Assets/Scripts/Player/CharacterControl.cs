@@ -162,6 +162,7 @@ public class CharacterControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyWeapon"))
         {
+            animator.SetTrigger("Damaged");
             // Ollaan osuttu EnemyWeaponiin -> Vähennetään healthia.
             TakeDamage(20);
         }
@@ -203,42 +204,30 @@ public class CharacterControl : MonoBehaviour
             if (sheepAmmount == 1) 
             {
                 image1.enabled = true;
-                image2.enabled = false;
-                image3.enabled = false;
-                image4.enabled = false;
-                image5.enabled = false; 
+                
             }
             if (sheepAmmount == 2)
             {
-                image1.enabled = true;
+           
                 image2.enabled = true;
-                image3.enabled = false;
-                image4.enabled = false;
-                image5.enabled = false;
+                
             }
             if (sheepAmmount == 3)
             {
-                image1.enabled = true;
-                image2.enabled = true;
+               
                 image3.enabled = true;
-                image4.enabled = false;
-                image5.enabled = false;
+               
             }
             if (sheepAmmount == 4)
             {
-                image1.enabled = true;
-                image2.enabled = true;
-                image3.enabled = true;
+               
                 image4.enabled = true;
-                image5.enabled = false;
+                
             }
 
             if (sheepAmmount == 5)
             {
-                image1.enabled = true;
-                image2.enabled = true;
-                image3.enabled = true;
-                image4.enabled = true;
+                
                 image5.enabled = true;
             }
 
