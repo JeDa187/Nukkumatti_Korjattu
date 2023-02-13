@@ -162,7 +162,7 @@ public class CharacterControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyWeapon"))
         {
-            animator.SetTrigger("Damaged");
+            
             // Ollaan osuttu EnemyWeaponiin -> V‰hennet‰‰n healthia.
             TakeDamage(20);
         }
@@ -257,7 +257,7 @@ public class CharacterControl : MonoBehaviour
 
     void TakeDamage(float dmg)
     {
-
+        animator.SetTrigger("Damaged");
         GameManager.manager.previousHealth = filler.fillAmount * GameManager.manager.maxHealth;
         counter = 0; 
         GameManager.manager.health -= dmg; // T‰m‰ v‰hent‰‰ damage:n verran health arvosta. health = health - dmg;
@@ -265,7 +265,7 @@ public class CharacterControl : MonoBehaviour
 
         if (GameManager.manager.health < 10)
         {
-
+        
             Die();
 
         }

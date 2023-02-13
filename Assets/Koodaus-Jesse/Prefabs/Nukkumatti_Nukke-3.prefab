@@ -168,7 +168,7 @@ MonoBehaviour:
   - {fileID: 1317867510657300315}
   - {fileID: 260595198670880186}
   m_Bounds:
-    m_Center: {x: 0.0024551153, y: 0.00042140484, z: 0}
+    m_Center: {x: 0.0024551153, y: 0.000420928, z: 0}
     m_Extent: {x: 0.9325452, y: 1.2345794, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -501,6 +501,90 @@ Transform:
   m_Father: {fileID: 837139251392772003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2164949509309878550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2534733269814286865}
+  - component: {fileID: 8573514297970804988}
+  m_Layer: 0
+  m_Name: Umbrella_Open
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2534733269814286865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164949509309878550}
+  m_LocalRotation: {x: -0, y: -0, z: -0.4677027, w: 0.8838858}
+  m_LocalPosition: {x: 0.95, y: 1.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8855606244942818764}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8573514297970804988
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164949509309878550}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1931753828162003601, guid: 3cc264ebb270bc44caa6803775387d69, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8.5, y: 4.95}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2274492621088882154
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,8 +689,8 @@ MonoBehaviour:
   - {fileID: 6457407302800006826}
   - {fileID: 1031326494929363712}
   m_Bounds:
-    m_Center: {x: -0.00057160854, y: -0.00028401613, z: 0}
-    m_Extent: {x: 1.4059395, y: 0.89634484, z: 0}
+    m_Center: {x: -0.00057160854, y: -0.0002836585, z: 0}
+    m_Extent: {x: 1.4059395, y: 0.8963447, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -745,7 +829,8 @@ Transform:
   m_LocalPosition: {x: 0.2737479, y: -0.29730257, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2534733269814286865}
   m_Father: {fileID: 7955460155722544843}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -884,8 +969,8 @@ MonoBehaviour:
   - {fileID: 4511314144504228052}
   - {fileID: 3583622086831348357}
   m_Bounds:
-    m_Center: {x: 0.00030982494, y: 0.00015997887, z: 0}
-    m_Extent: {x: 1.7610109, y: 2.20484, z: 0}
+    m_Center: {x: 0.00030982494, y: 0.00015974045, z: 0}
+    m_Extent: {x: 1.7610109, y: 2.2048402, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1528,7 +1613,7 @@ MonoBehaviour:
   - {fileID: 1031326494929363712}
   - {fileID: 4923646702061624287}
   m_Bounds:
-    m_Center: {x: 0.00042021275, y: -0.0045747757, z: 0}
+    m_Center: {x: 0.00042021275, y: -0.0045752525, z: 0}
     m_Extent: {x: 1.4727501, y: 2.1904254, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1615,7 +1700,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9653473, y: 4.912954}
+  m_Offset: {x: -0.67089796, y: 4.912954}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1626,7 +1711,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2865753, y: 8.776433}
+  m_Size: {x: 5.0214396, y: 8.776433}
   m_EdgeRadius: 0
 --- !u!95 &7242350034801697984
 Animator:
@@ -1665,7 +1750,7 @@ MonoBehaviour:
     m_Bits: 256
   attackPos: {fileID: 2761151901524401237}
   attackRange: 5.04
-  damage: 100
+  damage: 50
   animator: {fileID: 7242350034801697984}
 --- !u!114 &7242350034801697986
 MonoBehaviour:
@@ -1690,16 +1775,11 @@ MonoBehaviour:
     m_Bits: 64
   grounded: 0
   sheepAmmount: 0
-  sheepFiller1: {fileID: 4123224519767418402, guid: 0987e4ad55cc70146b7cb27dff63320c, type: 3}
-  sheepFiller2: {fileID: 838441576036302069, guid: 95cc54ab2320f2a4ca4303bc23bb00ae, type: 3}
-  sheepFiller3: {fileID: 5968479710401543181, guid: 3e06053c08a127c4a8ba619cf821c281, type: 3}
-  sheepFiller4: {fileID: 2536454814570577898, guid: 4eaff7a831668584b921384d79bc31d1, type: 3}
-  sheepFiller5: {fileID: 1637382130769638660, guid: 8bca7b0d846c53c46ac5ada00b3d4857, type: 3}
-  sheep1Position: {x: -270.5, y: 965, z: 0}
-  sheep2Position: {x: -87, y: 965, z: 0}
-  sheep3Position: {x: 84.5, y: 965, z: 0}
-  sheep4Position: {x: 262.5, y: 965, z: 0}
-  sheepP5osition: {x: 434, y: 965, z: 0}
+  image1: {fileID: 0}
+  image2: {fileID: 0}
+  image3: {fileID: 0}
+  image4: {fileID: 0}
+  image5: {fileID: 0}
   pillow: {fileID: 8176922646466559982, guid: 275db0b078a892a4bb5cf9e1770f08e3, type: 3}
   pillowPosition: {x: -19.84449, y: -8.577729, z: 0}
   filler: {fileID: 0}
@@ -1908,8 +1988,8 @@ MonoBehaviour:
   - {fileID: 475782862082346113}
   - {fileID: 420478317250492346}
   m_Bounds:
-    m_Center: {x: -0.0030546188, y: -0.011934519, z: 0}
-    m_Extent: {x: 0.6919445, y: 1.4580655, z: 0}
+    m_Center: {x: -0.0030546188, y: -0.011934996, z: 0}
+    m_Extent: {x: 0.6919445, y: 1.458065, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
