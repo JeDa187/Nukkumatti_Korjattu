@@ -227,11 +227,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 113444cdc5b971142bd57c076a696009, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.16
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 113444cdc5b971142bd57c076a696009, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.05
+      value: -4.94
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 113444cdc5b971142bd57c076a696009, type: 3}
       propertyPath: m_LocalPosition.z
@@ -357,6 +357,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -119.229
       objectReference: {fileID: 0}
+    - target: {fileID: -4672250002913763987, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1627047303, guid: 32e0f44be3eaced4492d56cb45793be2, type: 3}
     - target: {fileID: -4377212719995929116, guid: 113444cdc5b971142bd57c076a696009, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5737501
@@ -403,6 +407,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3774683876672232478, guid: 113444cdc5b971142bd57c076a696009, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2344288708906407195, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+      propertyPath: m_Bounds.m_Center.x
+      value: 0.029005647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2344288708906407195, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+      propertyPath: m_Bounds.m_Center.y
+      value: 0.014144897
+      objectReference: {fileID: 0}
+    - target: {fileID: -2344288708906407195, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+      propertyPath: m_Bounds.m_Extent.x
+      value: 1.849999
+      objectReference: {fileID: 0}
+    - target: {fileID: -2344288708906407195, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+      propertyPath: m_Bounds.m_Extent.y
+      value: 2.4576464
+      objectReference: {fileID: 0}
+    - target: {fileID: -2344288708906407195, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+      propertyPath: m_BoneTransforms.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2256144047859036102, guid: 113444cdc5b971142bd57c076a696009, type: 3}
@@ -776,6 +800,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &774197810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774197804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Umbrella
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: UmbrellaOpen
+      m_Hash: 0
+      m_Sprite: {fileID: -1627047303, guid: 32e0f44be3eaced4492d56cb45793be2, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: a05e6237862672547aba1c00a7903a20, type: 3}
 --- !u!1 &877486542
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +935,26 @@ Transform:
   m_Father: {fileID: 774197806}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.097}
+--- !u!1 &1103723414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7203393994737425048, guid: 113444cdc5b971142bd57c076a696009, type: 3}
+  m_PrefabInstance: {fileID: 774197803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1103723415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103723414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0
+  m_labelHash: 0
+  m_SpriteKey: 5.724509e-35
 --- !u!1 &1670247501
 GameObject:
   m_ObjectHideFlags: 0
