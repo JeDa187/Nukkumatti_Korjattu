@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3840
     height: 1517
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 63365
+  controlID: 17909
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 63366
+  controlID: 17910
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 63367
+  controlID: 17911
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -430,9 +430,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8009ffffbc09ffffe220ffff2226ffff962bffffe22bffffb62fffff7e4fffff9860ffffa865ffff7e6effff1e70ffff4c70ffffb872ffffae74ffff46dcffffaeddffff08e9ffff0ef5ffff10fbffffd2620000228e00002a8e00003c8e0000c2d10000d0090100
+      m_SelectedIDs: 36c5ffff
+      m_LastClickedID: -15050
+      m_ExpandedIDs: 08fbffff6e6200007862000080620000886200009262000098620000a2620000b2620000c0620000e4620000ec620000f862000002630000106300001863000036630000406300006a6300008c63000096630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -857,22 +857,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Grafiikka-Liisa
+    - Assets/Grafiikka-Liisa/Sounds/Dialogue
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Grafiikka-Liisa
+  - Assets/Grafiikka-Liisa/Sounds/Dialogue
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\liisa\Documents\Unityprojektit\Nukkumatti_Korjattu
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e680000
-    m_LastClickedID: 26638
-    m_ExpandedIDs: 00000000086800000c6800000e680000106800001468000000ca9a3b
+    m_SelectedIDs: 20670000
+    m_LastClickedID: 26400
+    m_ExpandedIDs: 00000000c6650000c8650000ca650000cc650000ce65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -900,7 +900,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000086800000c6800000e680000106800001468000000ca9a3b
+    m_ExpandedIDs: 00000000c6650000c8650000ca650000cc650000ce65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -925,9 +925,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 941b0100
-    m_LastClickedInstanceID: 72596
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 36c5ffff
+    m_LastClickedInstanceID: -15050
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000072650000f65f0000905e00002c81000084600000706400007e620000826200007a620000f8610000be95000070940000cc9800002663000036740000d8810000ae9d0000c2620000a6620000a2620000dc630000000000006c610000126500001a7a000028970000c0a10000527c000088dc0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 667
-    width: 1637
-    height: 332
+    y: 993
+    width: 3274
+    height: 526
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1016,10 +1016,10 @@ MonoBehaviour:
     editType: 0
     timeReferenceMode: 0
   m_LockTracker:
-    m_IsLocked: 0
+    m_IsLocked: 1
   m_SequenceHierarchy: {fileID: 0}
   m_SequencePath:
-    m_SelectionRoot: 72596
+    m_SelectionRoot: 25260
     m_SubElements: []
 --- !u!114 &19
 MonoBehaviour:
@@ -1051,7 +1051,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 72596
+  m_LastSelectedObjectID: -15050
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
