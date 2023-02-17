@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_4
+      name: Pillow
       rect:
         serializedVersion: 2
         x: 1679
@@ -325,6 +325,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Pillow: -1980416477
       Platform_Wide: 704378155
       Nukkumatti_assets_1_3: -1774885415
       Nukkumatti_assets_1_0: -1086917639
@@ -332,7 +333,6 @@ TextureImporter:
       Nukkumatti_assets_1_2: 1554134126
       Nukkumatti_assets_1_7: -441668656
       Nukkumatti_assets_1_9: -1783321883
-      Nukkumatti_assets_1_4: -1980416477
       Platfrom_Square: 1655636389
       Nukkumatti_assets_1_5: -971311292
   spritePackingTag: 
