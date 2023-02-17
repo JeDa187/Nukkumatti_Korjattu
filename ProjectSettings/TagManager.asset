@@ -12,6 +12,8 @@ TagManager:
   - FallDeath
   - Enemy
   - EnemyWeapon
+  - Sheep
+  - Pillow
   layers:
   - Default
   - TransparentFX

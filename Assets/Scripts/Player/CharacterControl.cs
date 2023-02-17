@@ -18,7 +18,23 @@ public class CharacterControl : MonoBehaviour
     public LayerMask groundCheckLayer;
     public bool grounded;
 
- 
+    //Lampaiden ker‰ys
+    public float sheepAmmount;
+    
+
+    public Image image1;
+    public Image image2;
+    public Image image3;
+    public Image image4;
+    public Image image5;
+
+
+
+    //Tason l‰p‰isy tyyny
+    public GameObject pillow;
+    public Vector3 pillowPosition;
+
+
     public Image filler;
     public float counter;
     public float maxCounter;
@@ -44,7 +60,14 @@ public class CharacterControl : MonoBehaviour
         GameManager.manager.historyHealth = GameManager.manager.health;
         GameManager.manager.historyPreviousHealth = GameManager.manager.previousHealth;
         GameManager.manager.historyMaxHealth = GameManager.manager.maxHealth;
-        
+
+      
+            image1.enabled = false;
+            image2.enabled = false;
+            image3.enabled = false;
+            image4.enabled = false;
+            image5.enabled = false;
+       
 
     }
 
@@ -103,6 +126,7 @@ public class CharacterControl : MonoBehaviour
         // Hyppy
         if (Input.GetButtonDown("Jump") && grounded && jumpCount < extraJumps)
         {
+            animator.SetTrigger("Jump 0");
             rb2D.velocity = new Vector2(0, jumpForce);
             jumpCount++;
             
@@ -123,11 +147,13 @@ public class CharacterControl : MonoBehaviour
 
         filler.fillAmount = Mathf.Lerp(GameManager.manager.previousHealth / GameManager.manager.maxHealth, GameManager.manager.health / GameManager.manager.maxHealth, counter / maxCounter);
 
-
+        //Pelaaja kuolee kun putoaa tarpeeksi alas
         if(gameObject.transform.position.y < -50)
         {
             Die();
         }
+
+       
 
     }
    
@@ -136,6 +162,7 @@ public class CharacterControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyWeapon"))
         {
+            
             // Ollaan osuttu EnemyWeaponiin -> V‰hennet‰‰n healthia.
             TakeDamage(20);
         }
@@ -161,12 +188,58 @@ public class CharacterControl : MonoBehaviour
             AddMaxHealth(40);
         }
 
-        if (collision.CompareTag("LevelEnd"))
+        if (collision.CompareTag("Pillow"))
         {
             GameManager.manager.previousLevel = GameManager.manager.currentLevel;
             SceneManager.LoadScene("Map");
         }
+
+        //Lampaita ker‰t‰‰n
+        if (collision.CompareTag("Sheep"))
+        {
+            Destroy(collision.gameObject);
+            sheepAmmount++;
+
+
+            if (sheepAmmount == 1) 
+            {
+                image1.enabled = true;
+                
+            }
+            if (sheepAmmount == 2)
+            {
+           
+                image2.enabled = true;
+                
+            }
+            if (sheepAmmount == 3)
+            {
+               
+                image3.enabled = true;
+               
+            }
+            if (sheepAmmount == 4)
+            {
+               
+                image4.enabled = true;
+                
+            }
+
+            if (sheepAmmount == 5)
+            {
+                
+                image5.enabled = true;
+            }
+
+            if (sheepAmmount > 4)
+            {
+                Instantiate(pillow, pillowPosition, transform.rotation);
+            }
+        }
+
     }
+
+   
 
 
     void AddMaxHealth(float addMaxHealthAmount)
@@ -184,7 +257,7 @@ public class CharacterControl : MonoBehaviour
 
     void TakeDamage(float dmg)
     {
-
+        animator.SetTrigger("Damaged");
         GameManager.manager.previousHealth = filler.fillAmount * GameManager.manager.maxHealth;
         counter = 0; 
         GameManager.manager.health -= dmg; // T‰m‰ v‰hent‰‰ damage:n verran health arvosta. health = health - dmg;
@@ -192,12 +265,15 @@ public class CharacterControl : MonoBehaviour
 
         if (GameManager.manager.health < 10)
         {
-
+        
             Die();
 
         }
 
     }
+
+   
+   
 
     public void Die()
     {
