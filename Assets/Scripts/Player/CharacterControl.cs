@@ -133,12 +133,14 @@ public class CharacterControl : MonoBehaviour
         }
 
         // t‰m‰ luo counterille laskurin, joka kasvaa maxCounteriin ja aloittaa uudestaan 0:sta. 
+        
         if(counter > maxCounter)
-        {
+       {
             GameManager.manager.previousHealth = GameManager.manager.health;
             counter = 0;
-            
+
         }
+       
         else
         {
             counter += Time.deltaTime;
@@ -167,7 +169,13 @@ public class CharacterControl : MonoBehaviour
             TakeDamage(20);
         }
 
-        
+      /*  if (collision.gameObject.CompareTag("Pillow"))
+        {
+            // Osutaan tyynyyn eli p‰‰st‰‰n Level1 onnistuneesti l‰pi
+            SceneManager.LoadScene("WorldMapTest");
+        }
+      */
+      
 
     }
 
@@ -191,7 +199,7 @@ public class CharacterControl : MonoBehaviour
         if (collision.CompareTag("Pillow"))
         {
             GameManager.manager.previousLevel = GameManager.manager.currentLevel;
-            SceneManager.LoadScene("Map");
+            SceneManager.LoadScene("WorldMapTest");
         }
 
         //Lampaita ker‰t‰‰n
@@ -284,6 +292,8 @@ public class CharacterControl : MonoBehaviour
         SceneManager.LoadScene("Map");
 
     }
+
+
 
 
 }
