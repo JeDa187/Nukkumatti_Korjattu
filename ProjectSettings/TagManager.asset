@@ -48,11 +48,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 2377991841
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 2377991841
+  - name: Platforms
+    uniqueID: 3759071499
     locked: 0
   - name: ForeGround
     uniqueID: 848972179

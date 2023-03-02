@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_0
+      name: Platform_HighWall
       rect:
         serializedVersion: 2
         x: 32
@@ -147,7 +147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_2
+      name: Platform_Angle
       rect:
         serializedVersion: 2
         x: 1707
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_3
+      name: Plaform_Wall
       rect:
         serializedVersion: 2
         x: 727
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_4
+      name: Pillow
       rect:
         serializedVersion: 2
         x: 1679
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_5
+      name: PlatformSmallWall
       rect:
         serializedVersion: 2
         x: 2446
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_7
+      name: Platform_SmallSquare
       rect:
         serializedVersion: 2
         x: 2457
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nukkumatti_assets_1_9
+      name: Platfarm_Small
       rect:
         serializedVersion: 2
         x: 2037
@@ -325,16 +325,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      PlatformSmallWall: -971311292
+      Plaform_Wall: -1774885415
       Platform_Wide: 704378155
-      Nukkumatti_assets_1_3: -1774885415
-      Nukkumatti_assets_1_0: -1086917639
       Sheep_item: -701624429
-      Nukkumatti_assets_1_2: 1554134126
-      Nukkumatti_assets_1_7: -441668656
-      Nukkumatti_assets_1_9: -1783321883
-      Nukkumatti_assets_1_4: -1980416477
+      Platform_SmallSquare: -441668656
+      Platfarm_Small: -1783321883
+      Platform_HighWall: -1086917639
+      Platform_Angle: 1554134126
       Platfrom_Square: 1655636389
-      Nukkumatti_assets_1_5: -971311292
+      Pillow: -1980416477
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
