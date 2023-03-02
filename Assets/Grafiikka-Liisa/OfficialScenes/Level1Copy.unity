@@ -5994,10 +5994,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 859432656}
     - target: {fileID: 7242350034801697986, guid: 7c51236e41fbe7444ab1d1f2b27b1acc, type: 3}
-      propertyPath: pillow
-      value: 
-      objectReference: {fileID: 19949113591020109, guid: ebd83ab84aef6564dbbd6743cdaed3ce, type: 3}
-    - target: {fileID: 7242350034801697986, guid: 7c51236e41fbe7444ab1d1f2b27b1acc, type: 3}
       propertyPath: sheepFiller1
       value: 
       objectReference: {fileID: 86946162}
@@ -8900,11 +8896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8064163661722870355, guid: 0f4182f090742f741a19df30429d3166, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -113.4
+      value: -113.3
       objectReference: {fileID: 0}
     - target: {fileID: 8064163661722870355, guid: 0f4182f090742f741a19df30429d3166, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 8064163661722870355, guid: 0f4182f090742f741a19df30429d3166, type: 3}
       propertyPath: m_LocalPosition.z
