@@ -1781,7 +1781,7 @@ MonoBehaviour:
   image4: {fileID: 0}
   image5: {fileID: 0}
   pillow: {fileID: 8176922646466559982, guid: 275db0b078a892a4bb5cf9e1770f08e3, type: 3}
-  pillowPosition: {x: -19.84449, y: -8.577729, z: 0}
+  pillowPosition: {x: 191.4, y: -20, z: 0.06456935}
   filler: {fileID: 0}
   counter: 0.5
   maxCounter: 3
