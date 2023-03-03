@@ -5994,6 +5994,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 859432656}
     - target: {fileID: 7242350034801697986, guid: 7c51236e41fbe7444ab1d1f2b27b1acc, type: 3}
+      propertyPath: pillow
+      value: 
+      objectReference: {fileID: 19949113591020109, guid: ebd83ab84aef6564dbbd6743cdaed3ce, type: 3}
+    - target: {fileID: 7242350034801697986, guid: 7c51236e41fbe7444ab1d1f2b27b1acc, type: 3}
       propertyPath: sheepFiller1
       value: 
       objectReference: {fileID: 86946162}
