@@ -31,8 +31,8 @@ public class CharacterControl : MonoBehaviour
 
 
     //Tason läpäisy tyyny
-    public GameObject pillow;
-    public Vector3 pillowPosition;
+   public GameObject pillow;
+   public Vector3 pillowPosition;
 
 
     public Image filler;

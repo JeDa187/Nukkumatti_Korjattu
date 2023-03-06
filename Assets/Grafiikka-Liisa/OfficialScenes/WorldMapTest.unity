@@ -5285,12 +5285,16 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7181399789288145168, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5757812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181399789288145168, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.42
+      value: -3.245
       objectReference: {fileID: 0}
     - target: {fileID: 7181399789288145168, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.63
+      value: -0.543
       objectReference: {fileID: 0}
     - target: {fileID: 7181399789288145168, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5325,12 +5329,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7181399789288145170, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
+      propertyPath: cleared
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181399789288145170, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
       propertyPath: levelToLoad
-      value: Level2
+      value: CreditsMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7181399789288145181, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
       propertyPath: m_Name
       value: Level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7181399789288145181, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
+      propertyPath: m_TagString
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 7181399789372252239, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5340,8 +5352,40 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.03
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7181399789288145171, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
+--- !u!1 &434216992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7181399789288145181, guid: 7a8fa32fd4cc1254bad4a23af4e6ef59, type: 3}
+  m_PrefabInstance: {fileID: 434216991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &434216993
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434216992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &530627110
 GameObject:
   m_ObjectHideFlags: 0
@@ -11155,6 +11199,7 @@ GameObject:
   - component: {fileID: 1635431006}
   - component: {fileID: 1635431005}
   - component: {fileID: 1635431007}
+  - component: {fileID: 1635431008}
   m_Layer: 0
   m_Name: House Mansard Window Light 1
   m_TagString: Untagged
@@ -11249,6 +11294,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1635431008
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635431004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1601506, y: 0.62}
+    newSize: {x: 1.1601506, y: 0.62}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1601506, y: 0.62}
+  m_EdgeRadius: 0
 --- !u!1 &1760534015
 GameObject:
   m_ObjectHideFlags: 0
