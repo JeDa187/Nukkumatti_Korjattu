@@ -327,6 +327,7 @@ public class CharacterControl : MonoBehaviour
     private void RestartLevel()
     {
         SceneManager.LoadScene("Level1Copy");
+        GameManager.manager.health = GameManager.manager.maxHealth;
     }
 
 
