@@ -305,15 +305,15 @@ public class CharacterControl : MonoBehaviour
         jumpForce = 0;
         
         animator.SetTrigger("Die");
-        // Etsi kaikki objektit, joilla on tagi "Enemy"
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyWeapon");
+        //// Etsi kaikki objektit, joilla on tagi "Enemy"
+        //GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyWeapon");
 
         // Käy läpi jokainen objekti ja deaktivoi sen scripti
-        foreach (GameObject enemy in enemies)
-        {
-            enemy.GetComponent<EnemyPatrol>().enabled = false;
-            enemy.GetComponent<EnemyAttack>().enabled = false;
-        }
+        //foreach (GameObject enemy in enemies)
+        //{
+        //    enemy.GetComponent<EnemyPatrol>().enabled = false;
+        //    enemy.GetComponent<EnemyAttack>().enabled = false;
+        //}
 
 
 
