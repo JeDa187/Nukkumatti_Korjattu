@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class CharacterControl : MonoBehaviour
 {
@@ -74,6 +75,8 @@ public class CharacterControl : MonoBehaviour
 
     void Update()
     {
+        
+
         //Parachute
         if (Input.GetKey(KeyCode.P) & !grounded && rb2D.velocity.y <= 0)
         {
@@ -123,6 +126,7 @@ public class CharacterControl : MonoBehaviour
             animator.SetBool("Walk", false);
         }
 
+        
         // Hyppy
         if (Input.GetButtonDown("Jump") && grounded && jumpCount < extraJumps)
         {
@@ -152,7 +156,8 @@ public class CharacterControl : MonoBehaviour
         //Pelaaja kuolee kun putoaa tarpeeksi alas
         if(gameObject.transform.position.y < -50)
         {
-            Die();
+            //Die();
+            RestartLevel();
         }
 
        
@@ -244,7 +249,8 @@ public class CharacterControl : MonoBehaviour
                 Instantiate(pillow, pillowPosition, transform.rotation);
             }
         }
-
+        
+        
     }
 
    
@@ -272,9 +278,12 @@ public class CharacterControl : MonoBehaviour
         
 
         if (GameManager.manager.health < 10)
+
         {
-        
+            
             Die();
+           
+
 
         }
 
@@ -285,12 +294,39 @@ public class CharacterControl : MonoBehaviour
 
     public void Die()
     {
+        
         GameManager.manager.currentLevel = GameManager.manager.previousLevel;
         GameManager.manager.health = GameManager.manager.historyHealth;
         GameManager.manager.previousHealth = GameManager.manager.historyPreviousHealth;
         GameManager.manager.maxHealth = GameManager.manager.historyMaxHealth;
-        SceneManager.LoadScene("Map");
+       
+       
+        moveSpeed = 0;
+        jumpForce = 0;
+        
+        animator.SetTrigger("Die");
+        // Etsi kaikki objektit, joilla on tagi "Enemy"
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyWeapon");
 
+        // Käy läpi jokainen objekti ja deaktivoi sen scripti
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.GetComponent<EnemyPatrol>().enabled = false;
+            enemy.GetComponent<EnemyAttack>().enabled = false;
+        }
+
+
+
+
+    }
+
+
+
+
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene("Level1Copy");
     }
 
 
