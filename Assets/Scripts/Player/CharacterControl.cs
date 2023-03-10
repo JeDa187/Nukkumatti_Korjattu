@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class CharacterControl : MonoBehaviour
 {
@@ -31,8 +32,8 @@ public class CharacterControl : MonoBehaviour
 
 
     //Tason läpäisy tyyny
-    public GameObject pillow;
-    public Vector3 pillowPosition;
+   public GameObject pillow;
+   public Vector3 pillowPosition;
 
 
     public Image filler;
@@ -74,6 +75,8 @@ public class CharacterControl : MonoBehaviour
 
     void Update()
     {
+        
+
         //Parachute
         if (Input.GetKey(KeyCode.P) & !grounded && rb2D.velocity.y <= 0)
         {
@@ -123,6 +126,7 @@ public class CharacterControl : MonoBehaviour
             animator.SetBool("Walk", false);
         }
 
+        
         // Hyppy
         if (Input.GetButtonDown("Jump") && grounded && jumpCount < extraJumps)
         {
@@ -133,12 +137,14 @@ public class CharacterControl : MonoBehaviour
         }
 
         // tämä luo counterille laskurin, joka kasvaa maxCounteriin ja aloittaa uudestaan 0:sta. 
+        
         if(counter > maxCounter)
-        {
+       {
             GameManager.manager.previousHealth = GameManager.manager.health;
             counter = 0;
-            
+
         }
+       
         else
         {
             counter += Time.deltaTime;
@@ -150,7 +156,8 @@ public class CharacterControl : MonoBehaviour
         //Pelaaja kuolee kun putoaa tarpeeksi alas
         if(gameObject.transform.position.y < -50)
         {
-            Die();
+            //Die();
+            RestartLevel();
         }
 
        
@@ -167,7 +174,13 @@ public class CharacterControl : MonoBehaviour
             TakeDamage(20);
         }
 
-        
+      /*  if (collision.gameObject.CompareTag("Pillow"))
+        {
+            // Osutaan tyynyyn eli päästään Level1 onnistuneesti läpi
+            SceneManager.LoadScene("WorldMapTest");
+        }
+      */
+      
 
     }
 
@@ -191,7 +204,7 @@ public class CharacterControl : MonoBehaviour
         if (collision.CompareTag("Pillow"))
         {
             GameManager.manager.previousLevel = GameManager.manager.currentLevel;
-            SceneManager.LoadScene("Map");
+            SceneManager.LoadScene("WorldMapTest");
         }
 
         //Lampaita kerätään
@@ -236,7 +249,8 @@ public class CharacterControl : MonoBehaviour
                 Instantiate(pillow, pillowPosition, transform.rotation);
             }
         }
-
+        
+        
     }
 
    
@@ -264,9 +278,12 @@ public class CharacterControl : MonoBehaviour
         
 
         if (GameManager.manager.health < 10)
+
         {
-        
+            
             Die();
+           
+
 
         }
 
@@ -277,13 +294,43 @@ public class CharacterControl : MonoBehaviour
 
     public void Die()
     {
+        
         GameManager.manager.currentLevel = GameManager.manager.previousLevel;
         GameManager.manager.health = GameManager.manager.historyHealth;
         GameManager.manager.previousHealth = GameManager.manager.historyPreviousHealth;
         GameManager.manager.maxHealth = GameManager.manager.historyMaxHealth;
-        SceneManager.LoadScene("Map");
+       
+       
+        moveSpeed = 0;
+        jumpForce = 0;
+        
+        animator.SetTrigger("Die");
+        //// Etsi kaikki objektit, joilla on tagi "Enemy"
+        //GameObject[] enemies = GameObject.FindGameObjectsWithTag("EnemyWeapon");
+
+        // Käy läpi jokainen objekti ja deaktivoi sen scripti
+        //foreach (GameObject enemy in enemies)
+        //{
+        //    enemy.GetComponent<EnemyPatrol>().enabled = false;
+        //    enemy.GetComponent<EnemyAttack>().enabled = false;
+        //}
+
+
+
 
     }
+
+
+
+
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene("Level1Copy");
+        GameManager.manager.health = GameManager.manager.maxHealth;
+    }
+
+
 
 
 }

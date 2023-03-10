@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class MenuControl : MonoBehaviour
 {
 
-    public void LoadMap()
+    public void LoadIntro()
     {
-        // Kun klikataan Play-apiniketta menussa -> Siirrytään Map sceneen. 
-        SceneManager.LoadScene("Map");
+        // Kun klikataan Play-painiketta menussa -> Siirrytään pelin introon, eli Cutscene-skeneen. 
+        SceneManager.LoadScene("Cutscene");
 
     }
 

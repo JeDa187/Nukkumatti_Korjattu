@@ -9,18 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading.unity
     guid: d4fb4175a4ebd6644a82ffc6f6486717
   - enabled: 1
-    path: Assets/Koodaus-Jesse/Scenes/MainMenuTest.unity
-    guid: 6f40a73b233dd44468dbb2be6b3387bf
+    path: Assets/Grafiikka-Liisa/OfficialScenes/MainMenuTest.unity
+    guid: aee7f119206ac0c4980f25a03f34c247
   - enabled: 1
-    path: Assets/Scenes/Map.unity
-    guid: 76904bcd070de7c48b60e24e7e44e51e
+    path: Assets/Grafiikka-Liisa/OfficialScenes/Cutscene.unity
+    guid: 7300ae47014af6949a8dba9da6664d99
   - enabled: 1
-    path: Assets/Koodaus-Jesse/Scenes/Level1.unity
-    guid: e3b1ebec48e67ac46ae5b752555eab9d
+    path: Assets/Grafiikka-Liisa/OfficialScenes/Level1Copy.unity
+    guid: 3f8b71dbe3498864082246ff42266d80
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 0fca55fd653db3a409b4f0b0c1ef1e17
+    path: Assets/Grafiikka-Liisa/OfficialScenes/WorldMapTest.unity
+    guid: d6e6ae75925f3254cad8a3cf89da7177
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: c7b30d4ee2ddac24eab3fc33632db6cb
+    path: Assets/Grafiikka-Liisa/OfficialScenes/CreditsMenu.unity
+    guid: 1bceb0cbb66417740af29f5f0995a450
   m_configObjects: {}

@@ -38,15 +38,25 @@ public class MapCharacter : MonoBehaviour
     // tehd‰‰n koodi, kun pelaaja osuu leveltriggeriin avautuu tasohyppelyscene
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("LevelTrigger"))
+        if (collision.CompareTag("Credits"))
         {
             // T‰m‰ ajetaan jos kartassa pelaaja osuu objektiin, jonka tag on "LevelTrigger"
             // Haetaan Leveltrigger objektista LoadLevel scripti ja katsotaan mik‰ on levelToLoad muuttujan arvo
             // ja k‰ynnistet‰‰n sen niminen Scene!
-            GameManager.manager.currentLevel = collision.gameObject.name;
+
+            // GameManager.manager.currentLevel = collision.gameObject.name;
             SceneManager.LoadScene(collision.GetComponent<LoadLevel>().levelToLoad);
+
+            //GameManager.manager.previousLevel = GameManager.manager.currentLevel;
+            //SceneManager.LoadScene("CreditsMenu");
         }
-        
+
+        /*f (collision.CompareTag("Pillow"))
+        {
+            GameManager.manager.previousLevel = GameManager.manager.currentLevel;
+            SceneManager.LoadScene("WorldMapTest");
+        }*/
+
     }
 
 }
